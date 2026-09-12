@@ -1,185 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JurnGrid is an early-stage AWS-first cloud operations platform being built to create a continuous record of infrastructure changes, context and operational signals.">
+  <meta name="theme-color" content="#1d2d3d">
+  <title>JurnGrid — Every change. Every layer. One continuous record.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="stylesheet" href="_ds/industry-86390f47-c176-4a1c-830b-505dd254f9ce/styles.css">
-<script src="_ds/industry-86390f47-c176-4a1c-830b-505dd254f9ce/_ds_bundle.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600&display=swap">
-<style>
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); text-wrap: pretty; }
-  a { color: var(--color-accent-700); }
-  a:hover { color: var(--color-accent-800); }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style>
-</helmet>
-
-<div style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); font-size: 15px; line-height: 1.55;">
-
-  <nav class="nav" style="position: sticky; top: 0; z-index: 20; background: var(--color-bg); border-bottom: 1px solid var(--color-divider); padding-inline: clamp(20px, 5vw, 72px); gap: 20px;">
-    <span class="nav-brand" style="letter-spacing: 0.04em; text-transform: uppercase;">JurnGrid</span>
-    <a href="#platform" style="font-size: 14px; white-space: nowrap; text-decoration: none;">Platform</a>
-    <a href="#approach" style="font-size: 14px; white-space: nowrap; text-decoration: none;">Approach</a>
-    <a href="#access" class="btn btn-secondary" style="text-decoration: none;">Early access</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">JurnGrid</a>
+      <a href="#platform">Platform</a>
+      <a href="#why">Why JurnGrid</a>
+      <a href="#build">Current build</a>
+      <a class="btn btn-light nav-cta" href="mailto:hello@jurngrid.com">Get in touch</a>
+    </div>
   </nav>
 
-  <section style="background: var(--color-accent-900); color: #f2f2f3;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 72px) clamp(48px, 7vw, 96px);">
-      <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #a8c3dd; margin-bottom: 12px;">AWS security posture monitoring</span>
-      <hr style="height: 1px; border: 0; margin: 0 0 28px; background: rgba(242,242,243,0.28);">
-      <h1 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(40px, 6.4vw, 84px); line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; max-width: 20ch;">
-        <span style="display: block;">Continuous security,</span>
-        <span style="display: block;">compliance and alerting</span>
-        <span style="display: block; color: #a8c3dd;">for growing AWS teams.</span>
-      </h1>
-      <p style="font-size: 17px; line-height: 1.6; max-width: 62ch; margin: 32px 0 0; color: rgba(242,242,243,0.88);">
-        AWS environments accumulate misconfigurations and compliance drift quietly. A permissive security group here, an unencrypted bucket there, a policy that no longer matches the control you documented last quarter. Most teams only find out when an audit or an incident forces the question. JurnGrid watches the account continuously, so the answer is already on the dashboard.
-      </p>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px;">
-        <a href="#access" class="btn btn-primary" style="text-decoration: none; min-height: 40px; padding-inline: 20px; font-size: 15px;">Request early access</a>
-        <a href="#platform" class="btn" style="text-decoration: none; min-height: 40px; padding-inline: 20px; font-size: 15px; color: #f2f2f3; border-color: rgba(242,242,243,0.4);">See what it does</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="platform" style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 104px) clamp(20px, 5vw, 72px) clamp(40px, 6vw, 72px);">
-    <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 12px;">01 · What JurnGrid does</span>
-    <hr style="height: 1px; border: 0; margin: 0 0 16px; background: var(--color-divider);">
-    <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; max-width: 24ch;">Five pillars, one account view</h2>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 3vw, 44px); margin-top: clamp(36px, 5vw, 60px);">
-
-      <div class="blueprint" style="padding: 28px 26px;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent-700); display: block;" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="0"></rect><path d="M8 21h8M12 17v4M6 13l3-4 3 3 3-5 3 4"></path></svg>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; margin: 20px 0 10px;">Monitoring &amp; inventory</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">A live inventory of every AWS resource across accounts and regions — what exists, where it runs, how it is configured, and what changed since yesterday.</p>
-      </div>
-
-      <div class="blueprint" style="padding: 28px 26px;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent-700); display: block;" aria-hidden="true"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6z"></path><path d="m9 12 2 2 4-4"></path></svg>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; margin: 20px 0 10px;">Security scanning</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">CIS benchmark checks run continuously against the account, alongside threat detection and network traffic analysis that surfaces exposure and unexpected movement.</p>
-      </div>
-
-      <div class="blueprint" style="padding: 28px 26px;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent-700); display: block;" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"></path><path d="M10.5 20a2 2 0 0 0 3 0"></path></svg>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; margin: 20px 0 10px;">Alerts &amp; dashboards</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Real-time notifications when posture changes, and a single customer-facing dashboard where findings, severity and history sit in one place rather than five consoles.</p>
-      </div>
-
-      <div class="blueprint" style="padding: 28px 26px;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent-700); display: block;" aria-hidden="true"><path d="M3 8V5h18v3a2 2 0 0 0 0 8v3H3v-3a2 2 0 0 0 0-8Z"></path><path d="M13 5v14"></path></svg>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; margin: 20px 0 10px;">ITSM integration</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Findings create tickets automatically in the tools teams already run their work in, so remediation follows the existing queue instead of a second inbox nobody owns.</p>
-      </div>
-
-      <div class="blueprint" style="padding: 28px 26px;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent-700); display: block;" aria-hidden="true"><path d="M14 2H6v20h12V6z"></path><path d="M14 2v4h4"></path><path d="m9 14 2 2 4-4"></path></svg>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; margin: 20px 0 10px;">Compliance &amp; reporting</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Evidence and reports mapped to the frameworks growing teams get asked about — SOC 2, PCI-DSS, CIS, and DORA-ready output — generated from the same continuous checks.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <sc-if value="{{ showStatusPlate }}" hint-placeholder-val="{{ true }}">
-    <section style="max-width: 1200px; margin: 0 auto; padding: clamp(24px, 4vw, 48px) clamp(20px, 5vw, 72px);">
-      <div class="blueprint" style="padding: 0;">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <header style="display: flex; flex-wrap: wrap; align-items: stretch; border-bottom: 1px solid var(--color-divider);">
-          <span style="flex: 1; min-width: 16ch; padding: 12px 24px; font-size: 13px; line-height: 24px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;">Coverage — current build</span>
-          <span style="padding: 12px 24px; font-size: 13px; line-height: 24px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; white-space: nowrap; border-left: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 70%, transparent);">Private development</span>
-        </header>
-        <table class="table" style="table-layout: fixed;">
-          <thead>
-            <tr>
-              <th scope="col" style="padding: 12px 24px;">Area</th>
-              <th scope="col" style="padding: 12px 24px;">Scope</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td style="padding: 12px 24px; font-size: 15px;">Deployment</td><td style="padding: 12px 24px; font-size: 15px;">Agentless — read-only role, nothing installed in the customer account</td></tr>
-            <tr><td style="padding: 12px 24px; font-size: 15px;">Checks</td><td style="padding: 12px 24px; font-size: 15px;">CIS AWS Foundations benchmark, configuration drift, network exposure</td></tr>
-            <tr><td style="padding: 12px 24px; font-size: 15px;">Frameworks</td><td style="padding: 12px 24px; font-size: 15px;">SOC 2, PCI-DSS, CIS, DORA-ready reporting</td></tr>
-            <tr><td style="padding: 12px 24px; font-size: 15px;">Delivery</td><td style="padding: 12px 24px; font-size: 15px;">Dashboard, real-time alerts, ITSM ticket creation</td></tr>
-          </tbody>
-        </table>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <span class="eyebrow">AWS-first cloud operations · in development</span>
+        <hr class="rule">
+        <h1>
+          Every change.<br>
+          Every layer.<br>
+          <span class="soft">One continuous record.</span>
+        </h1>
+        <p class="hero-copy">
+          JurnGrid is an early-stage cloud operations platform being built to bring infrastructure visibility, change awareness, security context and operational history into one clear view — starting with AWS.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:hello@jurngrid.com">Get in touch</a>
+          <a class="btn btn-outline" href="#platform">See the idea</a>
+        </div>
       </div>
     </section>
-  </sc-if>
 
-  <section id="approach" style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 72px);">
-    <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 12px;">02 · Our approach</span>
-    <hr style="height: 1px; border: 0; margin: 0 0 16px; background: var(--color-divider);">
-    <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; max-width: 26ch;">Why JurnGrid</h2>
+    <section class="section" id="platform">
+      <div class="wrap">
+        <span class="section-label">A clearer picture of your cloud</span>
+        <hr class="section-line">
+        <h2>See what is there. Know what changed. Catch what matters.</h2>
+        <p class="lead">
+          Cloud environments rarely stand still. Resources appear, configurations shift and operational context gets scattered across services and consoles. JurnGrid is being designed to keep that picture connected over time.
+        </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(28px, 4vw, 56px); margin-top: clamp(32px, 4vw, 52px);">
-      <div>
-        <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent-700); margin-bottom: 10px;">A</span>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 1.15; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 10px;">Agentless by design</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">No software is installed in customer AWS accounts. JurnGrid connects through a scoped, read-only role and reads what AWS already exposes. Nothing new to patch, nothing new to trust with write access.</p>
-      </div>
-      <div>
-        <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent-700); margin-bottom: 10px;">B</span>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 1.15; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 10px;">Cost-conscious</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Security tooling should not become a line item that rivals the infrastructure it watches. Collection is designed around the API and data volumes a growing team actually generates, not around per-resource pricing.</p>
-      </div>
-      <div>
-        <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent-700); margin-bottom: 10px;">C</span>
-        <h3 style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 1.15; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 10px;">Built by AWS people</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">The team has run production AWS environments and been on the other side of the audit. The checks, the defaults and the reports are shaped by that, rather than by a generic multi-cloud abstraction.</p>
-      </div>
-    </div>
-  </section>
+        <div class="cards">
+          <article class="blueprint">
+            <div class="icon">01</div>
+            <h3>See what exists</h3>
+            <p>Build a clear, current view of resources, relationships and configuration across the cloud environment without turning every question into a console hunt.</p>
+          </article>
 
-  <section id="access" style="background: var(--color-accent-900); color: #f2f2f3;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 72px);">
-      <span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #a8c3dd; margin-bottom: 12px;">03 · Early access</span>
-      <hr style="height: 1px; border: 0; margin: 0 0 24px; background: rgba(242,242,243,0.28);">
-      <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; max-width: 22ch;">Currently in private development</h2>
-      <p style="font-size: 16px; line-height: 1.6; max-width: 58ch; margin: 20px 0 0; color: rgba(242,242,243,0.88);">JurnGrid is being built with a small group of early AWS teams. If continuous posture monitoring and audit-ready reporting are on your roadmap, reach out and we will talk about a pilot.</p>
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 32px;">
-        <a href="mailto:{{ contactEmail }}" class="btn btn-primary" style="text-decoration: none; min-height: 40px; padding-inline: 20px; font-size: 15px;">{{ contactEmail }}</a>
-        <span style="font-size: 14px; color: rgba(242,242,243,0.7);">Response within two business days.</span>
-      </div>
-    </div>
-  </section>
+          <article class="blueprint">
+            <div class="icon">02</div>
+            <h3>Know what changed</h3>
+            <p>Keep a continuous record of infrastructure change so teams can understand how the environment arrived at its current state instead of reconstructing it later.</p>
+          </article>
 
-  <footer style="border-top: 1px solid var(--color-divider);">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">
-      <span style="font-family: var(--font-heading); font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text); margin-right: auto;">JurnGrid</span>
-      <span>© {{ year }} JurnGrid</span>
-      <a href="#" style="text-decoration: none;">Privacy</a>
-      <a href="#" style="text-decoration: none;">Terms</a>
+          <article class="blueprint">
+            <div class="icon">03</div>
+            <h3>Catch what matters</h3>
+            <p>Bring noteworthy configuration, security and operational signals into context, helping teams focus on changes that deserve attention.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section thesis" id="why">
+      <div class="wrap thesis-grid">
+        <div>
+          <span class="section-label">Why JurnGrid</span>
+          <p class="quote">The information already exists. <span>The context is what gets lost.</span></p>
+        </div>
+        <div class="prose">
+          <p>Cloud teams work across accounts, services, logs, alerts, tickets and dashboards. The challenge is often not a lack of data, but having enough connected context to understand what changed and why it matters.</p>
+          <p>JurnGrid is being built around that gap: a calm, continuous operational record that helps teams look back, understand the present and respond with better context.</p>
+          <p>The goal is not another noisy console. It is a clearer way to understand the environment as it changes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" aria-labelledby="name-heading">
+      <div class="wrap">
+        <span class="section-label">The name</span>
+        <hr class="section-line">
+        <h2 id="name-heading">A living journal for an interconnected environment.</h2>
+        <p class="lead">JurnGrid is built from two simple ideas: a record that keeps moving, and the infrastructure landscape it moves through.</p>
+
+        <div style="margin-top: 38px;">
+          <div class="nameplate">
+            <strong>Jurn</strong>
+            <p>A living journal — an ongoing record of activity, change and operational history.</p>
+          </div>
+          <div class="nameplate">
+            <strong>Grid</strong>
+            <p>The connected environment — resources, services, relationships and layers that make up cloud infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status" id="build">
+      <div class="wrap status-inner">
+        <span class="eyebrow">Current stage</span>
+        <h2>AWS-first. Early build. Designed to grow with the problem.</h2>
+        <p>
+          JurnGrid is currently in development, beginning with AWS infrastructure visibility and change tracking. The longer-term direction expands into broader operational monitoring, security context, reporting and deployment models that can support cloud and customer-managed environments.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:hello@jurngrid.com">hello@jurngrid.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="footer-brand">JurnGrid</span>
+      <span>© <span id="year"></span> JurnGrid</span>
+      <a href="mailto:hello@jurngrid.com">Contact</a>
     </div>
   </footer>
 
-</div>
-
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;contactEmail&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;hello@jurngrid.com&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showStatusPlate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;year&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:2026,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:2024,&quot;max&quot;:2035}}">
-class Component extends DCLogic {
-  renderVals() {
-    return {
-      contactEmail: this.props.contactEmail ?? "hello@jurngrid.com",
-      showStatusPlate: this.props.showStatusPlate ?? true,
-      year: this.props.year ?? new Date().getFullYear(),
-    };
-  }
-}
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
